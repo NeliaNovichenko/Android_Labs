@@ -18,8 +18,7 @@ public class VideoActivity extends AppCompatActivity {
 
     public void playInternetVideo(View view){
         videoPlayer =  (VideoView)findViewById(R.id.videoPlayer);
-
-        videoPlayer.setVideoPath("https://youtu.be/9_EvN5n5xwE?list=RDip4xmzTykFg");
+        videoPlayer.setVideoPath("http://video.ch9.ms/ch9/507d/71f4ef0f-3b81-4d2c-956f-c56c81f9507d/AndroidEmulatorWithMacEmulator.mp4");
         MediaController mediaController = new MediaController(this);
         videoPlayer.setMediaController(mediaController);
         mediaController.setMediaPlayer(videoPlayer);
