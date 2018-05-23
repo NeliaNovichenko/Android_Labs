@@ -89,8 +89,7 @@ public class MainActivity extends FragmentActivity {
 
         SQLiteDatabase db = getBaseContext().openOrCreateDatabase("app.db", MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS questions (queation TEXT, answer TEXT)");
-        //db.execSQL("INSERT INTO users VALUES ('Tom Smith', 23);");
-        //db.execSQL("INSERT INTO users VALUES ('John Dow', 31);");
+
 
         Cursor query = db.rawQuery("SELECT * FROM questions;", null);
         if(query.moveToFirst()){

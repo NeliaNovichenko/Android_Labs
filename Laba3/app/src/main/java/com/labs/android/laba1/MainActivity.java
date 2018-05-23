@@ -69,7 +69,7 @@ public class MainActivity extends FragmentActivity {
     }
 
     public void showAllQuestions(View view) {
-        for (Fragment fragment:getSupportFragmentManager().getFragments()) {
+        for (Fragment fragment: getSupportFragmentManager().getFragments()) {
             getSupportFragmentManager().beginTransaction().remove(fragment).commit();
         }
 
